@@ -1,2 +1,2 @@
-# TeamBlindHomework
-채용단계 - Homework
+# bbangHomework
+최소생성 - Homework
