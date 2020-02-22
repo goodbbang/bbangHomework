@@ -1,0 +1,6 @@
+framework module Pods_KakaoApiTest {
+  umbrella header "Pods-KakaoApiTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
