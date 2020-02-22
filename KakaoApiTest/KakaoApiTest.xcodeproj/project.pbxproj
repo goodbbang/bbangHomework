@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A63A36948C2C6073B7FF160C /* Pods_KakaoApiTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE3E6EA54CBD68A7C417F4B /* Pods_KakaoApiTestTests.framework */; };
+		AB00B1A72400D228006F01AB /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1A62400D228006F01AB /* SearchResultData.swift */; };
+		AB00B1A92400D26C006F01AB /* SearchViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */; };
+		AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */; };
+		AB00B1AD24010103006F01AB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AC24010103006F01AB /* Common.swift */; };
 		ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D64A2400BA9000923352 /* AppDelegate.swift */; };
 		ABC7D64F2400BA9000923352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D64E2400BA9000923352 /* ViewController.swift */; };
 		ABC7D6522400BA9000923352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6502400BA9000923352 /* Main.storyboard */; };
 		ABC7D6542400BA9300923352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6532400BA9300923352 /* Assets.xcassets */; };
 		ABC7D6572400BA9300923352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */; };
 		ABC7D6622400BA9300923352 /* KakaoApiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */; };
+		ABC7D6732400C0FC00923352 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6722400C0FC00923352 /* Service.swift */; };
 		E1B6AF063B577E2D8620975E /* Pods_KakaoApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,10 @@
 		51FC0613EDF2A8BE4FB5D25C /* Pods-KakaoApiTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTestTests.release.xcconfig"; path = "Target Support Files/Pods-KakaoApiTestTests/Pods-KakaoApiTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D766E1DE8AA6D72B0B6DDFC /* Pods-KakaoApiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest.debug.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest.debug.xcconfig"; sourceTree = "<group>"; };
 		9FBFAE46AF70514192491B51 /* Pods-KakaoApiTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTestTests.debug.xcconfig"; path = "Target Support Files/Pods-KakaoApiTestTests/Pods-KakaoApiTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB00B1A62400D228006F01AB /* SearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultData.swift; sourceTree = "<group>"; };
+		AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewContrller.swift; sourceTree = "<group>"; };
+		AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AB00B1AC24010103006F01AB /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		ABC7D6472400BA9000923352 /* KakaoApiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoApiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC7D64A2400BA9000923352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABC7D64E2400BA9000923352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +51,7 @@
 		ABC7D65D2400BA9300923352 /* KakaoApiTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoApiTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoApiTestTests.swift; sourceTree = "<group>"; };
 		ABC7D6632400BA9300923352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC7D6722400C0FC00923352 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		BCE3E6EA54CBD68A7C417F4B /* Pods_KakaoApiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoApiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAFABC95969A87B197CBCFD /* Pods-KakaoApiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest.release.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +84,6 @@
 				9FBFAE46AF70514192491B51 /* Pods-KakaoApiTestTests.debug.xcconfig */,
 				51FC0613EDF2A8BE4FB5D25C /* Pods-KakaoApiTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +94,22 @@
 				BCE3E6EA54CBD68A7C417F4B /* Pods_KakaoApiTestTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB00B1A52400D20D006F01AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1A62400D228006F01AB /* SearchResultData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB00B1AE24010106006F01AB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1AC24010103006F01AB /* Common.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		ABC7D63E2400BA9000923352 = {
@@ -110,11 +135,15 @@
 		ABC7D6492400BA9000923352 /* KakaoApiTest */ = {
 			isa = PBXGroup;
 			children = (
-				ABC7D64A2400BA9000923352 /* AppDelegate.swift */,
+				AB00B1AE24010106006F01AB /* Common */,
+				ABC7D6712400BD9500923352 /* Application */,
+				ABC7D6702400BD8700923352 /* Services */,
+				AB00B1A52400D20D006F01AB /* Models */,
+				ABC7D66F2400BD8100923352 /* ViewModels */,
+				ABC7D66E2400BD7800923352 /* ViewControllers */,
+				ABC7D66D2400BD6F00923352 /* Extensions */,
 				ABC7D64E2400BA9000923352 /* ViewController.swift */,
-				ABC7D6502400BA9000923352 /* Main.storyboard */,
 				ABC7D6532400BA9300923352 /* Assets.xcassets */,
-				ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */,
 				ABC7D6582400BA9300923352 /* Info.plist */,
 			);
 			path = KakaoApiTest;
@@ -127,6 +156,47 @@
 				ABC7D6632400BA9300923352 /* Info.plist */,
 			);
 			path = KakaoApiTestTests;
+			sourceTree = "<group>";
+		};
+		ABC7D66D2400BD6F00923352 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABC7D66E2400BD7800923352 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ABC7D66F2400BD8100923352 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ABC7D6702400BD8700923352 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABC7D6722400C0FC00923352 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ABC7D6712400BD9500923352 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ABC7D64A2400BA9000923352 /* AppDelegate.swift */,
+				ABC7D6502400BA9000923352 /* Main.storyboard */,
+				ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +367,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */,
+				AB00B1A72400D228006F01AB /* SearchResultData.swift in Sources */,
 				ABC7D64F2400BA9000923352 /* ViewController.swift in Sources */,
 				ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */,
+				AB00B1A92400D26C006F01AB /* SearchViewContrller.swift in Sources */,
+				ABC7D6732400C0FC00923352 /* Service.swift in Sources */,
+				AB00B1AD24010103006F01AB /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest.KakaoApiTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -487,7 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest.KakaoApiTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
