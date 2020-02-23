@@ -12,6 +12,8 @@
 		AB00B1A92400D26C006F01AB /* SearchViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */; };
 		AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */; };
 		AB00B1AD24010103006F01AB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AC24010103006F01AB /* Common.swift */; };
+		AB00B1B12401112E006F01AB /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1B02401112E006F01AB /* ContentCell.swift */; };
+		AB00B1B324012FCE006F01AB /* ContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1B224012FCE006F01AB /* ContentDetailViewController.swift */; };
 		ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D64A2400BA9000923352 /* AppDelegate.swift */; };
 		ABC7D64F2400BA9000923352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D64E2400BA9000923352 /* ViewController.swift */; };
 		ABC7D6522400BA9000923352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6502400BA9000923352 /* Main.storyboard */; };
@@ -19,6 +21,7 @@
 		ABC7D6572400BA9300923352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */; };
 		ABC7D6622400BA9300923352 /* KakaoApiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */; };
 		ABC7D6732400C0FC00923352 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6722400C0FC00923352 /* Service.swift */; };
+		ABFE24AE240166A3002C2EB5 /* ContentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */; };
 		E1B6AF063B577E2D8620975E /* Pods_KakaoApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,8 @@
 		AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewContrller.swift; sourceTree = "<group>"; };
 		AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		AB00B1AC24010103006F01AB /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		AB00B1B02401112E006F01AB /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		AB00B1B224012FCE006F01AB /* ContentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewController.swift; sourceTree = "<group>"; };
 		ABC7D6472400BA9000923352 /* KakaoApiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoApiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC7D64A2400BA9000923352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABC7D64E2400BA9000923352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoApiTestTests.swift; sourceTree = "<group>"; };
 		ABC7D6632400BA9300923352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC7D6722400C0FC00923352 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewModel.swift; sourceTree = "<group>"; };
 		BCE3E6EA54CBD68A7C417F4B /* Pods_KakaoApiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoApiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAFABC95969A87B197CBCFD /* Pods-KakaoApiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest.release.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +118,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		AB00B1AF240110F6006F01AB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1B02401112E006F01AB /* ContentCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		ABC7D63E2400BA9000923352 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +156,7 @@
 				ABC7D66F2400BD8100923352 /* ViewModels */,
 				ABC7D66E2400BD7800923352 /* ViewControllers */,
 				ABC7D66D2400BD6F00923352 /* Extensions */,
+				AB00B1AF240110F6006F01AB /* Cells */,
 				ABC7D64E2400BA9000923352 /* ViewController.swift */,
 				ABC7D6532400BA9300923352 /* Assets.xcassets */,
 				ABC7D6582400BA9300923352 /* Info.plist */,
@@ -169,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */,
+				AB00B1B224012FCE006F01AB /* ContentDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */,
+				ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -370,10 +387,13 @@
 				AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */,
 				AB00B1A72400D228006F01AB /* SearchResultData.swift in Sources */,
 				ABC7D64F2400BA9000923352 /* ViewController.swift in Sources */,
+				ABFE24AE240166A3002C2EB5 /* ContentDetailViewModel.swift in Sources */,
+				AB00B1B324012FCE006F01AB /* ContentDetailViewController.swift in Sources */,
 				ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */,
 				AB00B1A92400D26C006F01AB /* SearchViewContrller.swift in Sources */,
 				ABC7D6732400C0FC00923352 /* Service.swift in Sources */,
 				AB00B1AD24010103006F01AB /* Common.swift in Sources */,
+				AB00B1B12401112E006F01AB /* ContentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

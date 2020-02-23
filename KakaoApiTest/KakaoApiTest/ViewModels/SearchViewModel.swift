@@ -11,23 +11,50 @@ import RxCocoa
 
 class SearchViewModel {
     private let disposeBag = DisposeBag()
-    
-    var resultArray = PublishRelay<[Documents]>()
+    private var searchText: String
+    var resultArray = BehaviorRelay<[Document]>(value: [])
+    var historyArray = BehaviorRelay<[String]>(value: [])
     
     init() {
-        performFetchSearchResult()
+        searchText = ""
     }
     
-    func performFetchSearchResult() {
+    func performFetchSearch(searchText: String) {
         
-        Service().getSearchForKakao(searchType: .all, searchText: "캠핑칸", page: 1)
+        guard self.validateSearchText(searchText: searchText) else { return }
+        
+        self.saveSearchText()
+        
+        Service().getSearchForKakao(type: .blog, searchText: searchText, page: 1)
         .subscribe(
             onNext: { [weak self] data in
-                self?.resultArray.accept((data as SearchResultData).documents)
+                guard var searchData = self?.resultArray.value else { return }
+                searchData.removeAll()
+                self?.resultArray.accept(searchData + data.documents)
             },
             onError: { error in
             }
         )
         .disposed(by: disposeBag)
     }
+    
+    func validateSearchText(searchText: String?) -> Bool {
+        
+        guard let text = searchText, text.count > 1, text.count < 11 else {
+//            return "검색어를 2자 이상 10자 이하 입력해주세요."
+            return false
+        }
+        return true
+    
+//        guard let text = searchText, text.count > 1, historyArray.value.firstIndex(of: text) == nil else { return false }
+        
+//        self.searchText = text
+//        return true
+    }
+    
+    func saveSearchText() {
+        historyArray.accept(historyArray.value + [searchText])
+    }
 }
+
+

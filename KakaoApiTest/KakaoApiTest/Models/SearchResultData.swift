@@ -9,11 +9,11 @@
 import Foundation
 
 struct SearchResultData: Codable {
-    let documents: [Documents]
+    let documents: [Document]
     let meta: Meta
 }
 
-struct Documents: Codable {
+struct Document: Codable {
     let cafename: String?
     let blogname: String?
     let contents: String
@@ -22,11 +22,11 @@ struct Documents: Codable {
     let title: String
     let url: String
     
-    let isRead: Bool?
+    let isRead: Bool = false
     
     var name: String {
         get {
-            return cafename ?? blogname ?? "이름없음"
+            return cafename ?? blogname ?? "-"
         }
     }
 }

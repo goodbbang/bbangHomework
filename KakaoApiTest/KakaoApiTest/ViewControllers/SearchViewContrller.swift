@@ -11,8 +11,10 @@ import RxSwift
 import RxCocoa
 
 class SearchViewContrller: UIViewController {
-    @IBOutlet weak var lbReceiptAmount: UILabel!
+    @IBOutlet weak var tfSearch: UITextField!
+    @IBOutlet weak var btnSearch: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var historyTableView: UITableView!
 
     var viewModel: SearchViewModel?
     
@@ -20,18 +22,73 @@ class SearchViewContrller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.bindViewModel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.bindUi()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
-    func bindUi() {
+    func bindViewModel() {
         viewModel = SearchViewModel()
+        
         guard let viewModel = viewModel else { return }
-        viewModel.resultArray.asObservable()
-            .subscribe(onNext: { [weak self] array in
-                self?.lbReceiptAmount.text = ""
-                print("\(array)")
+        
+        tfSearch.rx.controlEvent([.editingDidBegin])
+        .asObservable()
+        .subscribe(onNext: { _ in
+            self.historyTableView.isHidden = false
+        }).disposed(by: disposeBag)
+        
+        tfSearch.rx.controlEvent([.editingDidEndOnExit])
+        .asObservable()
+        .subscribe(onNext: { _ in
+            self.historyTableView.isHidden = false
+        }).disposed(by: disposeBag)
+            
+        btnSearch.rx.tap.subscribe() { event in
+            viewModel.performFetchSearch(searchText: self.tfSearch.text ?? "")
+        }.disposed(by: disposeBag)
+        
+        // search tableview setting
+        viewModel.resultArray.bind(to: tableView.rx.items(cellIdentifier: "CustomCell")) { (index, document, cell) in
+            if let cell = cell as? ContentCell {
+                cell.lbType.text = ""
+                cell.lbName.text = document.name
+                cell.lbContent.text = document.contents
+                cell.lbDate.text = document.datetime
+            }
+        }.disposed(by: disposeBag)
+        
+        tableView.rx.itemSelected
+        .subscribe(onNext: { [weak self] indexPath in
+            guard let `self` = self else { return }
+            let item = viewModel.resultArray.value[indexPath.row]
+            let viewController = ContentDetailViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
+        })
+        .disposed(by: disposeBag)
+
+        // history tableview setting
+        viewModel.historyArray.bind(to: historyTableView.rx.items(cellIdentifier: "HistoryCell")) { (index, searchText, cell) in
+            cell.textLabel?.text = searchText
+        }.disposed(by: disposeBag)
+        
+        historyTableView.rx.itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                guard let `self` = self else { return }
+                self.performFetchSearch(searchText: viewModel.historyArray.value[indexPath.row])
             })
-            .disposed(by:self.disposeBag)
+        .disposed(by: disposeBag)
+    }
+    
+    func performFetchSearch(searchText: String) {
+        self.historyTableView.isHidden = true
+        self.tfSearch.endEditing(true)
     }
 }

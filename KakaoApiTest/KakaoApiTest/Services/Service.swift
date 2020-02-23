@@ -10,25 +10,8 @@ import Foundation
 import RxSwift
 import Alamofire
 
-enum SearchType: String {
-    case all
-    case blog
-    case cafe
-    
-    var typeTitle: String {
-        switch self {
-        case .all:
-            return "All"
-        case .blog:
-            return "블로그"
-        case .cafe:
-            return "카페"
-        }
-    }
-}
-
 struct URLs {
-    static let baseURL = "https://dapi.kakao.com/v2/search/%s"
+    static let baseURL = "https://dapi.kakao.com/v2/search/%@"
     static let query = "query"
     static let page = "page"
     static let size = "size"
@@ -41,21 +24,20 @@ struct URLs {
 typealias SearchResponse = Observable<SearchResultData>
 
 protocol SearchResponseProtocol {
-    func getSearchForKakao(searchType: SearchType, searchText: String, page: Int) -> SearchResponse
+    func getSearchForKakao(type: SearchType, searchText: String, page: Int) -> SearchResponse
 }
 
 class Service: SearchResponseProtocol {
 
-    func getSearchForKakao(searchType: SearchType, searchText: String, page: Int) -> SearchResponse {
+    func getSearchForKakao(type: SearchType, searchText: String, page: Int) -> SearchResponse {
         return SearchResponse.create { observer -> Disposable in
-            let request = Alamofire.request(String(format: URLs.baseURL, searchType.typeTitle),
+            let request = Alamofire.request(String(format: URLs.baseURL, type.searchType),
                                             method: .get,
                                             parameters: [URLs.query: searchText, URLs.page: page, URLs.size: 25],
                                             headers: URLs.headers)
                 .validate()
                 .responseData { responseData in
-                    DispatchQueue.main.sync {
-                        switch responseData.result {
+                    switch responseData.result {
                         case .success(let value):
                             do {
                                 let jsonData = try JSONDecoder().decode(SearchResultData.self, from: value)
@@ -68,7 +50,6 @@ class Service: SearchResponseProtocol {
                             observer.onError(error)
                         }
                     }
-            }
             return Disposables.create(with: {
                 request.cancel()
             })
