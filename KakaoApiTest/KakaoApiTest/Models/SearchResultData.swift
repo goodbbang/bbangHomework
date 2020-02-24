@@ -8,12 +8,15 @@
 
 import Foundation
 
+fileprivate let format = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
+
 struct SearchResultData: Codable {
     let documents: [Document]
     let meta: Meta
 }
 
 struct Document: Codable {
+    var type: String?
     let cafename: String?
     let blogname: String?
     let contents: String
@@ -22,12 +25,15 @@ struct Document: Codable {
     let title: String
     let url: String
     
-    let isRead: Bool = false
+    var isRead: Bool? = false
     
     var name: String {
         get {
             return cafename ?? blogname ?? "-"
         }
+    }
+    var date: Date? {
+        return datetime.date(with: format)
     }
 }
 

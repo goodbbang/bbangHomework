@@ -22,6 +22,11 @@
 		ABC7D6622400BA9300923352 /* KakaoApiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */; };
 		ABC7D6732400C0FC00923352 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6722400C0FC00923352 /* Service.swift */; };
 		ABFE24AE240166A3002C2EB5 /* ContentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */; };
+		ABFE24B4240235E3002C2EB5 /* UIAlertController+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B3240235E3002C2EB5 /* UIAlertController+Build.swift */; };
+		ABFE24B6240238A3002C2EB5 /* UIImageView+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B5240238A3002C2EB5 /* UIImageView+ImageLoader.swift */; };
+		ABFE24B824023F51002C2EB5 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B724023F51002C2EB5 /* String+Date.swift */; };
+		ABFE24BA24024179002C2EB5 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B924024179002C2EB5 /* Date+String.swift */; };
+		ABFE24BE2402E6FA002C2EB5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE24BD2402E6FA002C2EB5 /* WebKit.framework */; };
 		E1B6AF063B577E2D8620975E /* Pods_KakaoApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,11 @@
 		ABC7D6632400BA9300923352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC7D6722400C0FC00923352 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewModel.swift; sourceTree = "<group>"; };
+		ABFE24B3240235E3002C2EB5 /* UIAlertController+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Build.swift"; sourceTree = "<group>"; };
+		ABFE24B5240238A3002C2EB5 /* UIImageView+ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageLoader.swift"; sourceTree = "<group>"; };
+		ABFE24B724023F51002C2EB5 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		ABFE24B924024179002C2EB5 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		ABFE24BD2402E6FA002C2EB5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		BCE3E6EA54CBD68A7C417F4B /* Pods_KakaoApiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoApiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAFABC95969A87B197CBCFD /* Pods-KakaoApiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest.release.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFE24BE2402E6FA002C2EB5 /* WebKit.framework in Frameworks */,
 				E1B6AF063B577E2D8620975E /* Pods_KakaoApiTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +107,7 @@
 		78525E08B4491FB0C1D7ADB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABFE24BD2402E6FA002C2EB5 /* WebKit.framework */,
 				2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */,
 				BCE3E6EA54CBD68A7C417F4B /* Pods_KakaoApiTestTests.framework */,
 			);
@@ -176,6 +188,10 @@
 		ABC7D66D2400BD6F00923352 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ABFE24B3240235E3002C2EB5 /* UIAlertController+Build.swift */,
+				ABFE24B5240238A3002C2EB5 /* UIImageView+ImageLoader.swift */,
+				ABFE24B724023F51002C2EB5 /* String+Date.swift */,
+				ABFE24B924024179002C2EB5 /* Date+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,12 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFE24BA24024179002C2EB5 /* Date+String.swift in Sources */,
 				AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */,
 				AB00B1A72400D228006F01AB /* SearchResultData.swift in Sources */,
+				ABFE24B824023F51002C2EB5 /* String+Date.swift in Sources */,
 				ABC7D64F2400BA9000923352 /* ViewController.swift in Sources */,
 				ABFE24AE240166A3002C2EB5 /* ContentDetailViewModel.swift in Sources */,
 				AB00B1B324012FCE006F01AB /* ContentDetailViewController.swift in Sources */,
+				ABFE24B6240238A3002C2EB5 /* UIImageView+ImageLoader.swift in Sources */,
 				ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */,
+				ABFE24B4240235E3002C2EB5 /* UIAlertController+Build.swift in Sources */,
 				AB00B1A92400D26C006F01AB /* SearchViewContrller.swift in Sources */,
 				ABC7D6732400C0FC00923352 /* Service.swift in Sources */,
 				AB00B1AD24010103006F01AB /* Common.swift in Sources */,

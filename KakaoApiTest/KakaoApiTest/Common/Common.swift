@@ -20,18 +20,12 @@ enum SearchType {
         case .cafe:
             return "cafe"
         default:
-            return ""
+            return "all"
         }
     }
-    
-    var typeTitle: String {
-        switch self {
-        case .all:
-            return "All"
-        case .blog:
-            return "블로그"
-        case .cafe:
-            return "카페"
-        }
-    }
+}
+
+enum SortType {
+    case title
+    case dateTime
 }

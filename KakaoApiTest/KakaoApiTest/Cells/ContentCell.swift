@@ -13,4 +13,5 @@ class ContentCell: UITableViewCell {
     @IBOutlet weak var lbContent: UILabel!
     @IBOutlet weak var lbDate: UILabel!
     @IBOutlet weak var ivThumbnail: UIImageView!
+    @IBOutlet weak var vwDimd: UIView!
 }

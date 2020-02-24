@@ -11,14 +11,14 @@ import RxCocoa
 
 class ContentDetailViewModel {
     private let disposeBag = DisposeBag()
-//    var resultArray = BehaviorRelay<Document>(value: Document)
+    var document: Document
     
-    init() {
-        
+    init(document: Document) {
+        self.document = document
     }
     
-    func performFetchSearch() {
-        
+    func setRead() {
+        document.isRead = true
     }
 }
 
