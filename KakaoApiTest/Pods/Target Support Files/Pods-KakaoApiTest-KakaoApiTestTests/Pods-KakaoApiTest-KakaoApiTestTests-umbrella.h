@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_KakaoApiTestTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_KakaoApiTestTestsVersionString[];
+FOUNDATION_EXPORT double Pods_KakaoApiTest_KakaoApiTestTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_KakaoApiTest_KakaoApiTestTestsVersionString[];
 
