@@ -9,7 +9,9 @@ target 'KakaoApiTest' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
-  
+  pod 'Kingfisher', '~> 4.10.1'
+  pod 'PKHUD', '~> 5.0'
+
   target 'KakaoApiTestTests' do
     inherit! :search_paths
     # Pods for testing

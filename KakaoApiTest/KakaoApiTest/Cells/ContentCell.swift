@@ -10,7 +10,7 @@ import UIKit
 class ContentCell: UITableViewCell {
     @IBOutlet weak var lbType: UILabel!
     @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbContent: UILabel!
+    @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbDate: UILabel!
     @IBOutlet weak var ivThumbnail: UIImageView!
     @IBOutlet weak var vwDimd: UIView!

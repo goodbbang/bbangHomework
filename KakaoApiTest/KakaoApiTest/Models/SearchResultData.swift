@@ -16,7 +16,16 @@ struct SearchResultData: Codable {
 }
 
 struct Document: Codable {
-    var type: String?
+    var type: String {
+        if (cafename == nil) {
+            return "blog"
+        } else {
+            return "cafe"
+        }
+    }
+    var name: String {
+        return cafename ?? blogname ?? "-"
+    }
     let cafename: String?
     let blogname: String?
     let contents: String
@@ -24,17 +33,10 @@ struct Document: Codable {
     let thumbnail: String
     let title: String
     let url: String
-    
-    var isRead: Bool? = false
-    
-    var name: String {
-        get {
-            return cafename ?? blogname ?? "-"
-        }
-    }
     var date: Date? {
         return datetime.date(with: format)
     }
+    var isRead: Bool? = false
 }
 
 struct Meta: Codable {

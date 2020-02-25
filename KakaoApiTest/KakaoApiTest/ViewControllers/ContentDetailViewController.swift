@@ -23,24 +23,30 @@ class ContentDetailViewController: UIViewController {
     @IBOutlet weak var lbLink: UILabel!
     @IBOutlet weak var btnLink: UIButton!
     
-    private let disposeBag = DisposeBag()
+    let disposeBag = DisposeBag()
     var viewModel: ContentDetailViewModel?
     var isRead = BehaviorRelay<Bool>(value: false)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bindViewModel()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = true
         isRead.accept(viewModel?.document.isRead ?? false)
     }
     
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         self.title = viewModel.document.name
-        ivThumbnail.load(strUrl: viewModel.document.thumbnail)
+        ivThumbnail.setImage(with: viewModel.document.thumbnail)
         lbName.text = viewModel.document.name
         lbTitle.text = viewModel.document.title.withoutHtml
         lbContent.text = viewModel.document.contents.withoutHtml
