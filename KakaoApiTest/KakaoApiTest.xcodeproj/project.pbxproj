@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB00B1A72400D228006F01AB /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1A62400D228006F01AB /* SearchResultData.swift */; };
+		AB00B1A92400D26C006F01AB /* SearchViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */; };
+		AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */; };
+		AB00B1B12401112E006F01AB /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1B02401112E006F01AB /* ContentCell.swift */; };
+		AB00B1B324012FCE006F01AB /* ContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1B224012FCE006F01AB /* ContentDetailViewController.swift */; };
+		ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D64A2400BA9000923352 /* AppDelegate.swift */; };
+		ABC7D6522400BA9000923352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6502400BA9000923352 /* Main.storyboard */; };
+		ABC7D6542400BA9300923352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6532400BA9300923352 /* Assets.xcassets */; };
+		ABC7D6572400BA9300923352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */; };
+		ABC7D6622400BA9300923352 /* KakaoApiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */; };
+		ABC7D6732400C0FC00923352 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6722400C0FC00923352 /* Service.swift */; };
+		ABFE24AE240166A3002C2EB5 /* ContentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */; };
+		ABFE24B4240235E3002C2EB5 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B3240235E3002C2EB5 /* UIAlertControllerExtension.swift */; };
+		ABFE24B6240238A3002C2EB5 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B5240238A3002C2EB5 /* UIImageViewExtension.swift */; };
+		ABFE24B824023F51002C2EB5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B724023F51002C2EB5 /* StringExtension.swift */; };
+		ABFE24BA24024179002C2EB5 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B924024179002C2EB5 /* DateExtension.swift */; };
+		ABFE24BE2402E6FA002C2EB5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE24BD2402E6FA002C2EB5 /* WebKit.framework */; };
+		ABFE24C2240546B7002C2EB5 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24C1240546B7002C2EB5 /* UIButtonExtension.swift */; };
+		ABFE24C424055EB5002C2EB5 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24C324055EB5002C2EB5 /* SearchViewModelTests.swift */; };
+		ABFE24C7240567CC002C2EB5 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */; };
+		ABFE24C8240567CF002C2EB5 /* ContentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */; };
+		B26C138156AB80FEF1D955E0 /* Pods_KakaoApiTest_KakaoApiTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8954758BC2977AFD38ABFB /* Pods_KakaoApiTest_KakaoApiTestTests.framework */; };
+		E1B6AF063B577E2D8620975E /* Pods_KakaoApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABC7D65E2400BA9300923352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC7D63F2400BA9000923352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC7D6462400BA9000923352;
+			remoteInfo = KakaoApiTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A43F4D9C29363C4863F1C8 /* Pods-KakaoApiTest-KakaoApiTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest-KakaoApiTestTests.release.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest-KakaoApiTestTests/Pods-KakaoApiTest-KakaoApiTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoApiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8954758BC2977AFD38ABFB /* Pods_KakaoApiTest_KakaoApiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoApiTest_KakaoApiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51FC0613EDF2A8BE4FB5D25C /* Pods-KakaoApiTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTestTests.release.xcconfig"; path = "Target Support Files/Pods-KakaoApiTestTests/Pods-KakaoApiTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D766E1DE8AA6D72B0B6DDFC /* Pods-KakaoApiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest.debug.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9FBFAE46AF70514192491B51 /* Pods-KakaoApiTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTestTests.debug.xcconfig"; path = "Target Support Files/Pods-KakaoApiTestTests/Pods-KakaoApiTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7F58624CB669D35A39FF966 /* Pods-KakaoApiTest-KakaoApiTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest-KakaoApiTestTests.debug.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest-KakaoApiTestTests/Pods-KakaoApiTest-KakaoApiTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB00B1A62400D228006F01AB /* SearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultData.swift; sourceTree = "<group>"; };
+		AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewContrller.swift; sourceTree = "<group>"; };
+		AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AB00B1B02401112E006F01AB /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		AB00B1B224012FCE006F01AB /* ContentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewController.swift; sourceTree = "<group>"; };
+		ABC7D6472400BA9000923352 /* KakaoApiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoApiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC7D64A2400BA9000923352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABC7D6512400BA9000923352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABC7D6532400BA9300923352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABC7D6562400BA9300923352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABC7D6582400BA9300923352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC7D65D2400BA9300923352 /* KakaoApiTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoApiTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoApiTestTests.swift; sourceTree = "<group>"; };
+		ABC7D6632400BA9300923352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC7D6722400C0FC00923352 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewModel.swift; sourceTree = "<group>"; };
+		ABFE24B3240235E3002C2EB5 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		ABFE24B5240238A3002C2EB5 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		ABFE24B724023F51002C2EB5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		ABFE24B924024179002C2EB5 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		ABFE24BD2402E6FA002C2EB5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ABFE24C1240546B7002C2EB5 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		ABFE24C324055EB5002C2EB5 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		EFAFABC95969A87B197CBCFD /* Pods-KakaoApiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoApiTest.release.xcconfig"; path = "Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABC7D6442400BA9000923352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABFE24BE2402E6FA002C2EB5 /* WebKit.framework in Frameworks */,
+				E1B6AF063B577E2D8620975E /* Pods_KakaoApiTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC7D65A2400BA9300923352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26C138156AB80FEF1D955E0 /* Pods_KakaoApiTest_KakaoApiTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ACBE0D154EB01FBAB20839C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D766E1DE8AA6D72B0B6DDFC /* Pods-KakaoApiTest.debug.xcconfig */,
+				EFAFABC95969A87B197CBCFD /* Pods-KakaoApiTest.release.xcconfig */,
+				9FBFAE46AF70514192491B51 /* Pods-KakaoApiTestTests.debug.xcconfig */,
+				51FC0613EDF2A8BE4FB5D25C /* Pods-KakaoApiTestTests.release.xcconfig */,
+				A7F58624CB669D35A39FF966 /* Pods-KakaoApiTest-KakaoApiTestTests.debug.xcconfig */,
+				08A43F4D9C29363C4863F1C8 /* Pods-KakaoApiTest-KakaoApiTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78525E08B4491FB0C1D7ADB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABFE24BD2402E6FA002C2EB5 /* WebKit.framework */,
+				2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */,
+				4E8954758BC2977AFD38ABFB /* Pods_KakaoApiTest_KakaoApiTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB00B1A52400D20D006F01AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1A62400D228006F01AB /* SearchResultData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB00B1AF240110F6006F01AB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1B02401112E006F01AB /* ContentCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ABC7D63E2400BA9000923352 = {
+			isa = PBXGroup;
+			children = (
+				ABC7D6492400BA9000923352 /* KakaoApiTest */,
+				ABC7D6602400BA9300923352 /* KakaoApiTestTests */,
+				ABC7D6482400BA9000923352 /* Products */,
+				6ACBE0D154EB01FBAB20839C /* Pods */,
+				78525E08B4491FB0C1D7ADB9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABC7D6482400BA9000923352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABC7D6472400BA9000923352 /* KakaoApiTest.app */,
+				ABC7D65D2400BA9300923352 /* KakaoApiTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABC7D6492400BA9000923352 /* KakaoApiTest */ = {
+			isa = PBXGroup;
+			children = (
+				ABC7D6702400BD8700923352 /* Services */,
+				AB00B1A52400D20D006F01AB /* Models */,
+				ABC7D66F2400BD8100923352 /* ViewModels */,
+				ABC7D66E2400BD7800923352 /* ViewControllers */,
+				ABC7D66D2400BD6F00923352 /* Extensions */,
+				AB00B1AF240110F6006F01AB /* Cells */,
+				ABC7D64A2400BA9000923352 /* AppDelegate.swift */,
+				ABC7D6502400BA9000923352 /* Main.storyboard */,
+				ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */,
+				ABC7D6532400BA9300923352 /* Assets.xcassets */,
+				ABC7D6582400BA9300923352 /* Info.plist */,
+			);
+			path = KakaoApiTest;
+			sourceTree = "<group>";
+		};
+		ABC7D6602400BA9300923352 /* KakaoApiTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */,
+				ABFE24C324055EB5002C2EB5 /* SearchViewModelTests.swift */,
+				ABC7D6632400BA9300923352 /* Info.plist */,
+			);
+			path = KakaoApiTestTests;
+			sourceTree = "<group>";
+		};
+		ABC7D66D2400BD6F00923352 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABFE24B3240235E3002C2EB5 /* UIAlertControllerExtension.swift */,
+				ABFE24B5240238A3002C2EB5 /* UIImageViewExtension.swift */,
+				ABFE24B724023F51002C2EB5 /* StringExtension.swift */,
+				ABFE24B924024179002C2EB5 /* DateExtension.swift */,
+				ABFE24C1240546B7002C2EB5 /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABC7D66E2400BD7800923352 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1A82400D26C006F01AB /* SearchViewContrller.swift */,
+				AB00B1B224012FCE006F01AB /* ContentDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ABC7D66F2400BD8100923352 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */,
+				ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ABC7D6702400BD8700923352 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABC7D6722400C0FC00923352 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABC7D6462400BA9000923352 /* KakaoApiTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC7D6662400BA9300923352 /* Build configuration list for PBXNativeTarget "KakaoApiTest" */;
+			buildPhases = (
+				7CB5C6783D537783FC7A1363 /* [CP] Check Pods Manifest.lock */,
+				ABC7D6432400BA9000923352 /* Sources */,
+				ABC7D6442400BA9000923352 /* Frameworks */,
+				ABC7D6452400BA9000923352 /* Resources */,
+				C15E838A06821E6E0EF50DB3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoApiTest;
+			productName = KakaoApiTest;
+			productReference = ABC7D6472400BA9000923352 /* KakaoApiTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABC7D65C2400BA9300923352 /* KakaoApiTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC7D6692400BA9300923352 /* Build configuration list for PBXNativeTarget "KakaoApiTestTests" */;
+			buildPhases = (
+				E3589EE374220D400DABEF73 /* [CP] Check Pods Manifest.lock */,
+				ABC7D6592400BA9300923352 /* Sources */,
+				ABC7D65A2400BA9300923352 /* Frameworks */,
+				ABC7D65B2400BA9300923352 /* Resources */,
+				6A141D2855E33791788C9B13 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABC7D65F2400BA9300923352 /* PBXTargetDependency */,
+			);
+			name = KakaoApiTestTests;
+			productName = KakaoApiTestTests;
+			productReference = ABC7D65D2400BA9300923352 /* KakaoApiTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABC7D63F2400BA9000923352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Roy Bang";
+				TargetAttributes = {
+					ABC7D6462400BA9000923352 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					ABC7D65C2400BA9300923352 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = ABC7D6462400BA9000923352;
+					};
+				};
+			};
+			buildConfigurationList = ABC7D6422400BA9000923352 /* Build configuration list for PBXProject "KakaoApiTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABC7D63E2400BA9000923352;
+			productRefGroup = ABC7D6482400BA9000923352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABC7D6462400BA9000923352 /* KakaoApiTest */,
+				ABC7D65C2400BA9300923352 /* KakaoApiTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABC7D6452400BA9000923352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC7D6572400BA9300923352 /* LaunchScreen.storyboard in Resources */,
+				ABC7D6542400BA9300923352 /* Assets.xcassets in Resources */,
+				ABC7D6522400BA9000923352 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC7D65B2400BA9300923352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A141D2855E33791788C9B13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoApiTest-KakaoApiTestTests/Pods-KakaoApiTest-KakaoApiTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoApiTest-KakaoApiTestTests/Pods-KakaoApiTest-KakaoApiTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoApiTest-KakaoApiTestTests/Pods-KakaoApiTest-KakaoApiTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CB5C6783D537783FC7A1363 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoApiTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15E838A06821E6E0EF50DB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoApiTest/Pods-KakaoApiTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3589EE374220D400DABEF73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoApiTest-KakaoApiTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABC7D6432400BA9000923352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABFE24BA24024179002C2EB5 /* DateExtension.swift in Sources */,
+				AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */,
+				AB00B1A72400D228006F01AB /* SearchResultData.swift in Sources */,
+				ABFE24B824023F51002C2EB5 /* StringExtension.swift in Sources */,
+				ABFE24AE240166A3002C2EB5 /* ContentDetailViewModel.swift in Sources */,
+				AB00B1B324012FCE006F01AB /* ContentDetailViewController.swift in Sources */,
+				ABFE24B6240238A3002C2EB5 /* UIImageViewExtension.swift in Sources */,
+				ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */,
+				ABFE24C2240546B7002C2EB5 /* UIButtonExtension.swift in Sources */,
+				ABFE24B4240235E3002C2EB5 /* UIAlertControllerExtension.swift in Sources */,
+				AB00B1A92400D26C006F01AB /* SearchViewContrller.swift in Sources */,
+				ABC7D6732400C0FC00923352 /* Service.swift in Sources */,
+				AB00B1B12401112E006F01AB /* ContentCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC7D6592400BA9300923352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABFE24C7240567CC002C2EB5 /* SearchViewModel.swift in Sources */,
+				ABFE24C8240567CF002C2EB5 /* ContentDetailViewModel.swift in Sources */,
+				ABFE24C424055EB5002C2EB5 /* SearchViewModelTests.swift in Sources */,
+				ABC7D6622400BA9300923352 /* KakaoApiTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABC7D65F2400BA9300923352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC7D6462400BA9000923352 /* KakaoApiTest */;
+			targetProxy = ABC7D65E2400BA9300923352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABC7D6502400BA9000923352 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC7D6512400BA9000923352 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC7D6562400BA9300923352 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABC7D6642400BA9300923352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABC7D6652400BA9300923352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABC7D6672400BA9300923352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D766E1DE8AA6D72B0B6DDFC /* Pods-KakaoApiTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V9UCEVJB8;
+				INFOPLIST_FILE = KakaoApiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ABC7D6682400BA9300923352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAFABC95969A87B197CBCFD /* Pods-KakaoApiTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V9UCEVJB8;
+				INFOPLIST_FILE = KakaoApiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ABC7D66A2400BA9300923352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F58624CB669D35A39FF966 /* Pods-KakaoApiTest-KakaoApiTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V9UCEVJB8;
+				INFOPLIST_FILE = KakaoApiTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest.KakaoApiTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoApiTest.app/KakaoApiTest";
+			};
+			name = Debug;
+		};
+		ABC7D66B2400BA9300923352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A43F4D9C29363C4863F1C8 /* Pods-KakaoApiTest-KakaoApiTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V9UCEVJB8;
+				INFOPLIST_FILE = KakaoApiTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roy.kakaoapitest.KakaoApiTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoApiTest.app/KakaoApiTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABC7D6422400BA9000923352 /* Build configuration list for PBXProject "KakaoApiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC7D6642400BA9300923352 /* Debug */,
+				ABC7D6652400BA9300923352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC7D6662400BA9300923352 /* Build configuration list for PBXNativeTarget "KakaoApiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC7D6672400BA9300923352 /* Debug */,
+				ABC7D6682400BA9300923352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC7D6692400BA9300923352 /* Build configuration list for PBXNativeTarget "KakaoApiTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC7D66A2400BA9300923352 /* Debug */,
+				ABC7D66B2400BA9300923352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABC7D63F2400BA9000923352 /* Project object */;
+}
