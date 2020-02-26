@@ -255,7 +255,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNM-zH-suI">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNM-zH-suI">
                             <rect key="frame" x="20" y="0.0" width="304" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="cSA-l6-TIN"/>

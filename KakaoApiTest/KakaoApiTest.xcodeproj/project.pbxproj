@@ -12,12 +12,15 @@
 		AB00B1AB2400D70C006F01AB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */; };
 		AB00B1B12401112E006F01AB /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1B02401112E006F01AB /* ContentCell.swift */; };
 		AB00B1B324012FCE006F01AB /* ContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1B224012FCE006F01AB /* ContentDetailViewController.swift */; };
+		AB2D102E240655770062044C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6722400C0FC00923352 /* Service.swift */; };
 		ABC7D64B2400BA9000923352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D64A2400BA9000923352 /* AppDelegate.swift */; };
 		ABC7D6522400BA9000923352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6502400BA9000923352 /* Main.storyboard */; };
 		ABC7D6542400BA9300923352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6532400BA9300923352 /* Assets.xcassets */; };
 		ABC7D6572400BA9300923352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D6552400BA9300923352 /* LaunchScreen.storyboard */; };
-		ABC7D6622400BA9300923352 /* KakaoApiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */; };
 		ABC7D6732400C0FC00923352 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D6722400C0FC00923352 /* Service.swift */; };
+		ABE4497124065B1100BD845C /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1A62400D228006F01AB /* SearchResultData.swift */; };
+		ABE4497224065B1500BD845C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B724023F51002C2EB5 /* StringExtension.swift */; };
+		ABE4497324065B1700BD845C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B924024179002C2EB5 /* DateExtension.swift */; };
 		ABFE24AE240166A3002C2EB5 /* ContentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */; };
 		ABFE24B4240235E3002C2EB5 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B3240235E3002C2EB5 /* UIAlertControllerExtension.swift */; };
 		ABFE24B6240238A3002C2EB5 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24B5240238A3002C2EB5 /* UIImageViewExtension.swift */; };
@@ -27,7 +30,6 @@
 		ABFE24C2240546B7002C2EB5 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24C1240546B7002C2EB5 /* UIButtonExtension.swift */; };
 		ABFE24C424055EB5002C2EB5 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24C324055EB5002C2EB5 /* SearchViewModelTests.swift */; };
 		ABFE24C7240567CC002C2EB5 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00B1AA2400D70C006F01AB /* SearchViewModel.swift */; };
-		ABFE24C8240567CF002C2EB5 /* ContentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */; };
 		B26C138156AB80FEF1D955E0 /* Pods_KakaoApiTest_KakaoApiTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8954758BC2977AFD38ABFB /* Pods_KakaoApiTest_KakaoApiTestTests.framework */; };
 		E1B6AF063B577E2D8620975E /* Pods_KakaoApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC231D5D84CAC4F42CC2D57 /* Pods_KakaoApiTest.framework */; };
 /* End PBXBuildFile section */
@@ -62,7 +64,6 @@
 		ABC7D6562400BA9300923352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC7D6582400BA9300923352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC7D65D2400BA9300923352 /* KakaoApiTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoApiTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoApiTestTests.swift; sourceTree = "<group>"; };
 		ABC7D6632400BA9300923352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC7D6722400C0FC00923352 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		ABFE24AD240166A3002C2EB5 /* ContentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewModel.swift; sourceTree = "<group>"; };
@@ -177,7 +178,6 @@
 		ABC7D6602400BA9300923352 /* KakaoApiTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				ABC7D6612400BA9300923352 /* KakaoApiTestTests.swift */,
 				ABFE24C324055EB5002C2EB5 /* SearchViewModelTests.swift */,
 				ABC7D6632400BA9300923352 /* Info.plist */,
 			);
@@ -428,10 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE4497124065B1100BD845C /* SearchResultData.swift in Sources */,
+				ABE4497324065B1700BD845C /* DateExtension.swift in Sources */,
 				ABFE24C7240567CC002C2EB5 /* SearchViewModel.swift in Sources */,
-				ABFE24C8240567CF002C2EB5 /* ContentDetailViewModel.swift in Sources */,
+				ABE4497224065B1500BD845C /* StringExtension.swift in Sources */,
+				AB2D102E240655770062044C /* Service.swift in Sources */,
 				ABFE24C424055EB5002C2EB5 /* SearchViewModelTests.swift in Sources */,
-				ABC7D6622400BA9300923352 /* KakaoApiTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

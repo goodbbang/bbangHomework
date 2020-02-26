@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 
-enum SearchType: String, CaseIterable {
+enum SearchType: String {
     case all
     case blog
     case cafe
