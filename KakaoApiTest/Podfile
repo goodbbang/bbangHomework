@@ -13,11 +13,7 @@ target 'KakaoApiTest' do
   pod 'PKHUD', '~> 5.0'
 
   target 'KakaoApiTestTests' do
-    pod 'Alamofire'
     pod 'RxSwift'
-    pod 'RxCocoa'
-    pod 'Kingfisher', '~> 4.10.1'
-    pod 'PKHUD', '~> 5.0'
   end
 
 end
